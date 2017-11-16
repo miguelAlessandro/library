@@ -39,7 +39,7 @@ long long Pollards_Rho(long long n, int k){
 }
 
 /////////////////////////////////////////////////////
-long long Phollards_Rho(long long n){
+long long Phollard_Brend_Rho(long long n){
   long long x_fixed = 2, x = 2, factor = 1;
   long long cycle_size = 2;
 	while (factor == 1){
