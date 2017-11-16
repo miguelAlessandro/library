@@ -12,7 +12,7 @@ long long f(long long x, long long c, long long n){
   return add(bimul(x, x, n), c, n);
 }
 
-long long PollardRho(long long n){
+long long PollardsRho(long long n){
  
     if (n==1) return n;
     if (n % 2 == 0) return 2;
