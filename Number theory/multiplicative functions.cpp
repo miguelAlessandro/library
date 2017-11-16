@@ -6,6 +6,8 @@
     f[p . q] = f[p] . f[q] if gcd(p, q) = 1
   *************************
 
+  find f[ [1, ..., n] ]
+  Complexity: O(n)
 */
 
 
