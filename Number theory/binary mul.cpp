@@ -1,4 +1,4 @@
-long long mul(long long a, long long b, long long mod){
+long long bimul(long long a, long long b, long long mod){
 
   long long r = 0;
   while(b > 0){
@@ -10,7 +10,7 @@ long long mul(long long a, long long b, long long mod){
 }
 
 
-long long mul_fast(long long a, long long b, long long mod){
+long long bimul_fast(long long a, long long b, long long mod){
   a = add(a, 0, mod);
   b = add(b, 0, mod);
 
