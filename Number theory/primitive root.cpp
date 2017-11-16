@@ -44,7 +44,7 @@ int generator (int p) {
     for (int res = 2; res <= p; ++res){
         bool ok = 1;
         for (int f : fact)
-            ok &= expfast(res, phi / f, p) != 1;
+            ok &= expfast(res, Phi / f, p) != 1;
         
         if (ok)  return res;
     }
