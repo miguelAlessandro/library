@@ -5,7 +5,7 @@
     x_i.i = 1 (mod n) 
   1 <= i <= m
   
-  m <= n.
+  m <= n <= 10^9.
   complexity: O(m)
   
   n%i = n - {n/i}.i
