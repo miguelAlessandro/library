@@ -1,9 +1,9 @@
 /*
   Discrete logarithm
   
-  find x in: a^x = b (mod n)
+  find x in: a^x = b (mod m)
   
-  Complexity: O(sqrt n . log n) / [best : O(sqrt n) use hashing]
+  Complexity: O(sqrt m . log m) / [best : O(sqrt m) use hashing]
 */
 
 
