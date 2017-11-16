@@ -38,7 +38,7 @@ long long Pollards_Rho(long long n, int k){
     return d;
 }
 
-/////////////////////////////////////////////////////
+///////////////////////////////////////////////////// Complexity: O(n^0.25)
 long long Phollard_Brend_Rho(long long n){
   long long x_fixed = 2, x = 2, factor = 1;
   long long cycle_size = 2;
