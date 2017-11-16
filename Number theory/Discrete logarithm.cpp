@@ -7,7 +7,7 @@
 */
 
 
-int solve (int a, int b, int m) {
+int discrete_logarithm (int a, int b, int m) {
     int n = (int) sqrt (m + .0) + 1;
 
     int an = 1;
