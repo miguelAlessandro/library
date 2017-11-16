@@ -17,7 +17,7 @@ int generator (int p) {
         while(n%i == 0) n /= i; 
         fact.push_back(i);
       }
-    if(n > 1) ans.push_back(n);
+    if(n > 1) fact.push_back(n);
   
     for (int res = 2; res <= p; ++res){
         bool ok = 1;
