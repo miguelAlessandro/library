@@ -3,7 +3,7 @@
   
   find all solutions of:
   
-  x^k = a (mod n)
+  x^k = a (mod n) \ n prime
 
   
 */
