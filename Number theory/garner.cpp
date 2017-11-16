@@ -31,8 +31,8 @@ int add(int a, int b, int mod){
 }
 
 int mul(long long a, long long b, int mod){
-    add(a, 0);
-    add(b, 0);
+    a = add(a, 0);
+    b = add(b, 0);
     return a * b % mod;
 }
 
