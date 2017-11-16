@@ -9,7 +9,7 @@
     
     then there unique x mod p_1 . p_2 ... p_k
 
-    build x in the form x_1 + x_2 . p_1 + x_3 . p_1 . p_2 + ... x_k . p_1 . p_2 ... p_k
+    build x in the form x_1 + x_2 . p_1 + x_3 . p_1 . p_2 + ... x_k . p_1 . p_2 ... p_k-1
     
     complexity O(k*k*log k) / with fast inverse O(k*k)
 
