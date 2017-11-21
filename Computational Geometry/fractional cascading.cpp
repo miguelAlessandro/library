@@ -1,3 +1,14 @@
+/*
+	fractional cascading: 
+	
+	upper bound in k sorted list L_i:
+	
+	n = \sum_{i=1}^{k} | L_i |
+	
+	build: O(n)
+	complexity: O(log(n) + k)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -41,7 +52,7 @@ void merge(int i){
 		L[i][m] = ls-1;
 		R[i][m] = r;
 		r += 2;
-     	m += 1;
+     		m += 1;
 	}
 
 	while(l < ls){
