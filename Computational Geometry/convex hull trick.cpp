@@ -39,6 +39,16 @@ int query(int x){
 	return p(lo, x);
 }
 
+//x is monotic ~ q: querys O(n/q + 1)
+struct Query{
+	int head;	
+	Query():head(0){};
+	int operator()(int x){
+		while(head + 1 < CHT.size() and p(head, x) > p(head+1, x)) head += 1;
+		return p(head, x);
+	}
+};
+
 int main(){
 
 	add({2, 0});
