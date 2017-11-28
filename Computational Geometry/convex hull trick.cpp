@@ -44,6 +44,7 @@ struct Query{
 	int head;	
 	Query():head(0){};
 	int operator()(int x){
+		if(head >= CHT.size()) head = (int)CHT.size() - 1;
 		while(head + 1 < CHT.size() and p(head, x) > p(head+1, x)) head += 1;
 		return p(head, x);
 	}
