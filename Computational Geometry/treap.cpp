@@ -19,7 +19,7 @@ int upd(int t){
 	T[t].cnt = cnt(T[t].l) + 1 + cnt(T[t].r);
 }
 
-// split tree with root in t in the trees l, r
+// split tree with root t in the trees l, r
 // keys(t) = [minimum_key, maximum_key]
 // keys(l) = [minimum_key, key)
 // keys(r) = [key, maximum_key]
