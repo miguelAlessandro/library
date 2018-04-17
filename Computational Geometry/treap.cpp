@@ -10,6 +10,8 @@ struct node_treap{
     int cnt;
 } T[maxN];
 
+int elements = 0;
+
 int cnt(int t){
     return t ? T[t].cnt : 0;
 }
@@ -43,8 +45,28 @@ void merge(int& t, int l, int r){
     upd(t);
 }
 
+// insert element {key, prior}
+void insert(int& t, int key, int prior){
+    T[++elements] = {key, prior, 0, 0, 1};
+    if(t == 0) t = elements;
+    else{
+	int r;
+	split(t, t, r, key);
+        merge(t, t, elements);
+        merge(t, t, r);
+    }
+}
+
+// delete all element with key = 'key'
+void erase(int& t, int key){
+    int mid, r;
+    split(t, t, mid, key);
+    split(mid, mid, r, key+1);
+    merge(t, t, r);
+}
+
 int main(){
-        
+
 
     return 0;
 }
