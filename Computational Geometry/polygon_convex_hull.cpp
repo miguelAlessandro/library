@@ -1,3 +1,14 @@
+/*
+	polygon convex hull
+
+	let P a polygon, compute 
+	convez hull of p
+
+	time complexity: O(n)
+	memory complexity: O(n)
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -31,7 +42,6 @@ vector<Point> polygon_convex_hull(vector<Point>& P){
 	CH.resize(n-1);
 	return CH;
 }
-
 
 int main(){
 

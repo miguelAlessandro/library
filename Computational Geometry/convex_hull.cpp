@@ -1,3 +1,14 @@
+/*
+	convex hull algorithm:
+
+	let P a set of points, compute
+	CH(p): convez hull of p 
+
+	time complexity: O(n log n)
+	memory complexity: O(n)
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
