@@ -2,7 +2,7 @@
 	polygon convex hull
 
 	let P a polygon, compute 
-	convez hull of p
+	convex hull of p
 
 	time complexity: O(n)
 	memory complexity: O(n)
