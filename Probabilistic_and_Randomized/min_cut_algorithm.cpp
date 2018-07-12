@@ -28,7 +28,7 @@ void init (int V) {
   components = V;
 }
 
-int min_cut(vector<edge> List, int V, int E) {
+int karger_min_cut(vector<edge> List, int V, int E) {
  
   init(V);
   shuffle (List.begin(), List.end());
