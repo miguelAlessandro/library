@@ -1,3 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+const int SIZE_E = 1000 + 5;
+const int SIZE_V = 1000 + 5;
+int id[SIZE_V], rnk[SIZE_V];
+struct edge {
+  int u, v; 
+}
+vector<edge> List;
+
+
 int get (int x) {
   return x != id[x] ? get(id[x]) : x;
 }
